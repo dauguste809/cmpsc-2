@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+
+public class Distance {
+	
+	public static void main (String [] args) {
+		//set Scanner
+		Scanner console = new Scanner (System.in);
+		
+		//find coordinates
+		System.out.println("Please enter x1 and y1: ");
+		double x1 = console.nextDouble();
+		double y1 = console.nextDouble();
+		
+		System.out.println("Please enter x2 and y2: ");
+		double x2 = console.nextDouble();
+		double y2 = console.nextDouble();
+		
+		//do conversion
+		double x = x1 - x2;
+		double y = y1 - y2;
+		
+		double dis = Math.pow(x, 2) + Math.pow(y, 2);
+		double distance = Math.sqrt(dis);
+		
+		System.out.printf("The distance between these two points is: %.2f", distance);
+	}
+
+}
